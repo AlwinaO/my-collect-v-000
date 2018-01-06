@@ -1,13 +1,9 @@
 def my_collect(array)
   i = 0
-    languages = []
+    collection = []
     while i < array.length
-      yield array[i]
+      collection << yield(array[i])
       i += 1
     end
-    languages
-end
-
-my_collect(languages) do |language|
-  languages.upcase
+    collection
 end
