@@ -1,11 +1,11 @@
 def my_collect(array)
   i = 0
-    collection = []
+    languages = []
     while i < array.length
       yield array[i]
       i += 1
     end
-    collection
+    languages
 end
 
 my_collect(languages) do |language|
